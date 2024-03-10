@@ -22,9 +22,12 @@ Features:
 Dashboard:
 - Displays key metrics or features such as total number of products, orders.
 - Includes links or buttons for quick navigation to Products and Orders management pages.
+
 Products Management:
 - Presents a list of products with details such as name, category, price,and stock quantity using mock data.
 - Enables functionalities to add, edit, and delete products.
+
+
 Orders Management:
 - Shows a list of orders, including details like order ID, customer name,order date, and status using mock data.
 - Optional feature allows viewing of order details, updating order status, and deletion of orders.
