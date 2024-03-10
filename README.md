@@ -53,7 +53,7 @@ Credits:
 
   
 Screen Shots:
-
+![11](https://github.com/Madhu65498721/pro/assets/162883459/34349aa3-e24a-401b-bae4-f291289987f7)
 
 
 
@@ -72,6 +72,7 @@ When You run the “index.html” it will shown above,
 It will shows the “total no.of products” and “total no.of orders” and shows the buttons “products” and “orders”.
 When you click the “products” it will go to the page shown below.
 
+![22](https://github.com/Madhu65498721/pro/assets/162883459/e9ea76be-f285-45b6-86a0-4ef57a9e3bc2)
 
 
 
@@ -91,6 +92,8 @@ And also we can tha new product b clicking “addproduct”.
 When you click the “orders” it will dislays below.
 
 
+
+![33](https://github.com/Madhu65498721/pro/assets/162883459/b7c93d3e-488d-4e89-8172-5abe8e86511e)
 
 
 
