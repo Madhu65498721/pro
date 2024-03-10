@@ -1,0 +1,84 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+}
+.products, .orders {
+width: 80%;
+margin: 0 auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+text-align: center;
+color: #333;
+}
+.product, .order {
+border: 1px solid #ccc;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
+}
+.product p, .order p {
+margin: 5px 0;
+}
+.btn, .edit-btn, .delete-btn, .view-btn, .update-btn {
+padding: 5px 10px;
+border: none;
+cursor: pointer;
+border-radius: 3px;
+color: #fff;
+}
+.btn:hover, .edit-btn:hover, .delete-btn:hover, .view-btn:hover, .update-btn:hover {
+opacity: 0.8;
+}
+.btn {
+background-color: #007bff; /* Blue */
+}
+.edit-btn, .update-btn {
+background-color: #28a745; /* Green */
+}
+.delete-btn {
+background-color: #dc3545; /* Red */
+}
+.view-btn {
+background-color: #ffc107; /* Yellow */
+}
+.new-btn {
+background-color: #6c757d; /* Gray */
+}
+.order-info {
+background-color: #cce5ff; /* Light Blue */
+border: 1px solid #b8daff; /* Lighter Blue */
+padding: 15px;
+border-radius: 8px;
+}
+.product-highlight {
+background-color: #f8d7da; /* Light Red */
+}
+.order-highlight {
+background-color: #d4edda; /* Light Green */
+}
+.btn-primary {
+background-color: #6610f2; /* Purple */
+}
+.btn-secondary {
+background-color: #6c757d; /* Gray */
+}
+.view-btn-orders, .view-btn-products {
+background-color: #17a2b8; /* Cyan */
+}
+.update-btn-orders, .update-btn-products {
+background-color: #007bff; /* Blue */
+}
+.delete-btn-orders, .delete-btn-products {
+background-color: #dc3545; /* Red */
+}
+.order-box, .product-box {
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+padding: 15px;
+margin-bottom: 20px;
+}

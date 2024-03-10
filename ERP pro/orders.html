@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders Management</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 5px 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Orders Management</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer Name</th>
+                <th>Order Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="orderTable">
+            <!-- Mock data, replace with actual data -->
+            <tr>
+                <td>1</td>
+                <td>Madhu</td>
+                <td>2024-03-10</td>
+                <td>Processing</td>
+                <td>
+                    <button onclick="viewDetails(1)">View Details</button>
+                    <button onclick="updateStatus(1)">Update Status</button>
+                    <button onclick="deleteOrder(1)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shiva</td>
+                <td>2024-03-09</td>
+                <td>Shipped</td>
+                <td>
+                    <button onclick="viewDetails(2)">View Details</button>
+                    <button onclick="updateStatus(2)">Update Status</button>
+                    <button onclick="deleteOrder(2)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mahesh</td>
+                <td>2024-03-08</td>
+                <td>Delivered</td>
+                <td>
+                    <button onclick="viewDetails(3)">View Details</button>
+                    <button onclick="updateStatus(3)">Update Status</button>
+                    <button onclick="deleteOrder(3)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ram</td>
+                <td>2024-03-07</td>
+                <td>Processing</td>
+                <td>
+                    <button onclick="viewDetails(4)">View Details</button>
+                    <button onclick="updateStatus(4)">Update Status</button>
+                    <button onclick="deleteOrder(4)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Krishna</td>
+                <td>2024-03-06</td>
+                <td>Shipped</td>
+                <td>
+                    <button onclick="viewDetails(5)">View Details</button>
+                    <button onclick="updateStatus(5)">Update Status</button>
+                    <button onclick="deleteOrder(5)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- JavaScript functions for actions -->
+    <script>
+        function viewDetails(orderId) {
+            var order = document.getElementById("orderTable").querySelector("tr:nth-child(" + orderId + ")");
+            var orderId = order.cells[0].innerText;
+            var customerName = order.cells[1].innerText;
+            var orderDate = order.cells[2].innerText;
+            var status = order.cells[3].innerText;
+            alert("Order Details:\nOrder ID: " + orderId + "\nCustomer Name: " + customerName + "\nOrder Date: " + orderDate + "\nStatus: " + status);
+        }
+
+        function updateStatus(orderId) {
+            var order = document.getElementById("orderTable").querySelector("tr:nth-child(" + orderId + ")");
+            var newStatus = prompt("Enter new status for order ID " + orderId + ":");
+            if (newStatus !== null) {
+                order.cells[3].innerText = newStatus;
+                alert("Status updated successfully!");
+            }
+        }
+
+        function deleteOrder(orderId) {
+            var confirmDelete = confirm("Are you sure you want to delete order ID " + orderId + "?");
+            if (confirmDelete) {
+                var order = document.getElementById("orderTable").querySelector("tr:nth-child(" + orderId + ")");
+                order.remove();
+                alert("Order deleted successfully!");
+            }
+        }
+    </script>
+</body>
+</html>
